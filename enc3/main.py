@@ -4,7 +4,6 @@ from encryptr import red,reset,blue,green,purple,lightWhite,lightBlue,yellow,bol
 try:
     from terminaltables import DoubleTable
 except ModuleNotFoundError:
-    print("Module terminaltables is not installed installing. . .")
     install = ["install","terminaltables"]
     import pip
     pip.main(install)
