@@ -1,5 +1,4 @@
 import pip, os, shutil, sys, time
-#TODO: make a module not found Err handler 
 system = sys.platform
 global slash
 if system == "linux":
@@ -19,8 +18,8 @@ except ModuleNotFoundError:
 try:
     from colorama import Fore, Style,Back
 except ModuleNotFoundError:
-    benis = ["install","simple-chalk"]
-    pip.main(benis)
+    ins = ["install","simple-chalk"]
+    pip.main(ins)
     exit("restart the app due to required dependencies where not installed")
 try:
     from cryptography.fernet import Fernet
